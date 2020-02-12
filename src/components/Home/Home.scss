@@ -1,0 +1,141 @@
+.home{
+  height: 100vh;
+  max-height: 100vh;
+  background-color: #ffd100;
+  display: flex;
+  justify-content: center;
+  padding-left: 148px;
+  padding-right: 148px;
+  flex-direction: column;
+}
+
+.heading-big{
+  color: white;
+  font-size: 64px;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.sub-heading{
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Esteban', serif;
+}
+
+.bread{
+  font-family: 'Esteban', serif;
+  font-size: 24px;
+  margin-top: 12px;
+}
+
+.episodes-btn{
+  padding: 10px 20px;
+  background-color: #111;
+  color: white;
+  font-weight: bold;
+  width: 130px;
+  font-size: 18px;
+  font-family: 'Esteban', serif;
+  outline: none;
+  border: none;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.mic{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+}
+
+.arrow{
+  animation: slide 1s ease-in-out infinite;
+  margin-left: 32px;
+}
+
+.listen-now{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mob-mic{ display: none; }
+
+@keyframes slide {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(10px, 0); }
+}
+
+@media screen and(max-width: 1240px){
+  .mic{ width: 360px; }
+}
+
+@media screen and(max-width: 1100px){
+  .mic{ display: none; }
+  .home{
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading-big{ font-size: 52px; }
+  .sub-heading{ font-size: 36px; }
+  .bread{ font-size: 20px; }
+}
+
+@media screen and(max-width: 660px){
+  .hide{ display: none; }
+  .listen-now{
+    padding-top: 24px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and(max-width: 610px){
+  .home{
+    justify-content: center;
+    padding-bottom: 24px;
+  }
+  .heading-big{ font-size: 38px; }
+  .sub-heading{ font-size: 28px; }
+  .bread{ font-size: 16px; }
+  .listen-now{ padding-top: 12px; }
+  .mob-mic{
+    display: flex;
+    width: 280px;
+    margin-bottom: 24px;
+  }
+  .episodes-btn{
+    padding: 12px;
+    font-size: 16px;
+    line-height: 12px;
+  }
+}
+
+@media screen and(max-width: 530px){
+  .heading-big{ font-size: 32px; }
+  .sub-heading{ font-size: 24px; }
+  .bread{ font-size: 14px; }
+}
+
+@media screen and(max-width: 420px){
+  .home{
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 0;
+  }
+  .heading-big{ font-size: 24px; }
+  .sub-heading{ font-size: 20px; }
+  .bread{ font-size: 17px; }
+}
+
+@media screen and(max-width: 320px){
+  .home{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

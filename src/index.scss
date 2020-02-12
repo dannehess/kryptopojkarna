@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Esteban&display=swap');
+
+body, html{
+  margin: 0;
+  padding: 0;
+  color: #111;
+  background-color: #e5bf00;
+}
+
+h1, h2, h3, h4{ font-family: 'Montserrat', sans-serif; }
+
+p{
+  font-family: 'Esteban', serif;
+  font-size: 20px;
+}
+
+h1{
+  display: flex;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin-top: 24px;
+  color: black;
+}
+
+.section-heading{
+  margin: 0;
+  color: #111;
+}

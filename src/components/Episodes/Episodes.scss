@@ -1,0 +1,53 @@
+.episodes{
+  padding: 96px 148px;
+  background-color: #111;
+  background-color: #f5f5f5;
+}
+
+.episodes-info{
+  padding: 132px 148px 96px;
+  background-color: #ffd100;
+}
+
+.bread{
+  font-family: 'Esteban', serif;
+  font-size: 24px;
+  margin-top: 12px;
+}
+
+.spacer{
+  height: 72px;
+}
+
+@media screen and(max-width: 1200px){
+  .episodes{ padding: 96px 96px; }
+  .episodes-info{ padding: 124px 96px 64px 96px; }
+}
+
+@media screen and(max-width: 1100px){
+  .episodes-info{ padding: 124px 48px 64px 48px; }
+  .episodes{ padding: 48px 48px; }
+  .spacer{ display: flex; }
+}
+
+@media screen and(max-width: 950px){
+  .episodes-info{ padding: 96px 48px 48px; }
+}
+
+@media screen and(max-width: 800px){
+  .episodes{ padding: 24px; }
+}
+
+@media screen and(max-width: 660px){
+  .episodes-info{
+    .section-heading{ font-size: 32px; }
+    .bread{ font-size: 22px; }
+  }
+}
+
+@media screen and(max-width: 420px){
+  .episodes-info{
+    .section-heading{ font-size: 24px; }
+  }
+  .episodes{ padding: 12px; }
+}

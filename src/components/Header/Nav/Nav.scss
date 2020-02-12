@@ -1,0 +1,42 @@
+nav{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  a{
+    text-decoration: none;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 0px;
+    margin-left: 24px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: white;
+    color: #111;
+    i{
+      font-size: 12px;
+      margin-right: 8px;
+      color: #111;
+      display: flex;
+      align-self: center
+    }
+  }
+}
+
+@media screen and(max-width: 960px){
+  nav{
+    a{ margin-left: 24px; }
+  }
+}
+
+@media screen and(max-width: 850px){
+  .navicon{ display: none; }
+}
+
+@media screen and(max-width: 360px){
+  nav{
+    a{
+      margin-left: 20px;
+      font-size: 16px;
+    }
+  }
+}

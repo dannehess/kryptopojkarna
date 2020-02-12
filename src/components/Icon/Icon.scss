@@ -1,0 +1,13 @@
+a{
+  color: #111;
+  i{
+    font-size: 20px;
+    margin-left: 60px;
+  }
+}
+
+@media screen and(max-width: 450px){
+  .navlink{
+   display: none;
+  }
+}

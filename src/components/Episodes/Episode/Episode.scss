@@ -1,0 +1,113 @@
+.episode {
+  display: flex;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 48px;
+  padding: 12px;
+  color: rgb(79, 79, 79);
+  &:last-child{ margin-bottom: 0px; }
+  .info { display: flex; }
+  .image {
+    object-fit: scale-down;
+    position: relative;
+    .play-btn{
+      position: absolute;
+      background-color: rgba(0, 0, 0, .2);
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      height: 250px;
+      z-index: 1;
+      justify-content: center;
+      align-items: center;
+      :hover{ cursor: pointer; }
+      .play-text{
+        color: #fff;
+        margin: 6px 0;
+        font-weight: bold;
+      }
+      i{
+        font-size: 64px;
+        color: #fff;
+      }
+    }
+    .episode-image{
+      width: 300px;
+      height: 250px;
+      border-radius: 4px;
+    }
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 24px;
+    padding-top: 12px;
+    h2{
+      letter-spacing: 1px;
+      margin: 0;
+    }
+    p{ font-size: 18px; }
+    p:nth-child(even){
+      margin-top: 4px;
+      font-style: italic;
+    }
+    .date{ margin-bottom: 0; }
+  }
+}
+
+@media screen and(max-width: 800px){
+  .episode{
+    margin-bottom: 24px;
+    max-width: 100%;
+  .info{
+    display: flex;
+    flex-direction: column;
+    .description{
+      padding-left: 12px;
+      padding-right: 12px;
+      word-break: break-word;
+    }
+    .image{      
+      position: relative;
+      .play-btn{
+        position: absolute;
+        cursor: pointer;
+        height: auto;
+        width: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      .episode-image{
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+      }
+    }
+  }
+}
+}
+
+@media screen and(max-width: 450px){
+  .episode{
+    .info{
+        .description{
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 420px){
+  .episode{ 
+    margin-bottom: 12px;
+  &:last-child{ margin-bottom: 0px; }
+  .description{
+    h2{ font-size: 20px; }
+    p, .date{ font-size: 16px; }
+  }
+}
+}
